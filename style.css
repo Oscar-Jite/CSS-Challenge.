@@ -1,0 +1,132 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    background: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+
+section{
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card{
+    width: 350px;
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.card-header{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+
+.card-body{
+    padding: 0 20px 25px;
+}
+.profile-image{
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin: -50px auto 30px auto;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+.profile-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.age, .city, .stat-name{
+    font-weight: 400;
+    color:  hsl(229, 23%, 23%);
+}
+
+.age{
+    margin-left: 5px;
+}
+
+.city{
+    font-size: 1rem;
+}
+
+.card-footer{
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    padding: 0 25px;
+}
+
+.card-footer .stat{
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer .stat .value{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.card-footer .stat .stat-name{
+    font-size: .7rem;
+    letter-spacing: 1px;
+}
+
+
+.circle-top{
+    position: absolute;
+    top: -600px;
+    left: -200px;
+}
+
+.circle-bottom{
+    position: absolute;
+    bottom: -600px;
+    right : -200px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    font-weight: 25px;
+    
+}
+
+@media screen and (max-width: 375px){
+    .circle-top{
+        transform: translate(-70%, 75%);
+    }
+
+    .circle-bottom{
+        transform: translate(-70%, 75%);
+    }
+}
